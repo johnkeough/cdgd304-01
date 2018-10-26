@@ -1,0 +1,46 @@
+<html>
+    <head>
+
+        <title>
+            css grid test
+        </title>
+
+        <style type="text/css">
+
+            .in {
+                background-color: yellow;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border-style: solid;
+                border-color: black;
+                padding-left: 5px;
+            }
+
+            .grid {
+                display: grid;
+                /*grid-template-columns: minmax(200px, 500px) 1fr;*/
+                grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+                grid-gap: 10px;
+                
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="grid">
+            <div class="in">1</div>
+            <div class="in">2</div>
+            <div class="in">3</div>
+            <div class="in">4</div>
+            <div class="in">5</div>
+            <div class="in">6</div>
+            <div class="in">7</div>
+            <div class="in">8</div>
+        </div>
+
+    </body>
+
+</html>
