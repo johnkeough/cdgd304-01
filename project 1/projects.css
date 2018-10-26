@@ -29,7 +29,8 @@ h1{
 h2{
     font-size: 53px;
     text-transform: lowercase;
-    font-weight: 400;}
+    font-weight: 400;
+    line-height: .85em;}
 
 body{
     font-size: 16px;
@@ -43,6 +44,11 @@ body{
 a{
     color: black
         text-decoration: none;}
+
+p {
+    padding-top: 0px;
+    margin-top: 0px;
+}
 
 .nav {
     padding-bottom: 10px;
@@ -82,6 +88,21 @@ a{
     */
 }
 
+.desc {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.desc div:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.desc div:nth-child(2) {
+    grid-column-start: 3;
+    grid-column-end: -1;
+}
+
 .grid {
         padding-top: 10px;
     display: grid;
@@ -106,19 +127,25 @@ minmax(200px, 1fr)
 */
 
 .grid div:nth-child(1) {
+/*
     grid-column-start: 1;
     grid-column-end: 2;
+*/
 }
 
 .grid div:nth-child(2) {
-    grid-column-start: 2;
+/*
+    grid-column-start: 3;
     grid-column-end: -1;
+*/
 /*    position:absolute;*/
 }
 
 .grid div:nth-child(3) {
+/*
     grid-column-start: 2;
     grid-column-end: -1;
+*/
 }
 
 /*

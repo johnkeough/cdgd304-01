@@ -44,6 +44,11 @@ a{
     color: black
         text-decoration: none;}
 
+p {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
 .nav {
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -83,26 +88,39 @@ a{
     grid-template-columns: 1fr 1fr;
     /*    grid-template-rows: minmax(10px, 150px);*/
     grid-gap: 10px;
+    grid-auto-rows: auto;
 }
 
 .grid div:nth-child(1) {
     grid-column-start: 2;
     grid-column-end: -1;
+    grid-row: 1;
 }
 
 .grid div:nth-child(2) {
     grid-column-start: 2;
     grid-column-end: -1;
+    grid-row: 2;
+}
+
+.grid div:nth-child(3) {
+    grid-row: 3;
 }
 
 .grid div:nth-child(4) {
     grid-column-start: 2;
     grid-column-end: -1;
+    grid-row: 3;
+}
+
+.grid div:nth-child(5) {
+    grid-row: 4;
 }
 
 .grid div:nth-child(6) {
     grid-column-start: 2;
     grid-column-end: -1;
+    grid-row: 4;
 }
 
 
